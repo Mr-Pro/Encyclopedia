@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="cn.lger.encyclopedia.ui.impl.TranslateFragment">
+
+
+    <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:id="@+id/search_word"
+            android:iconifiedByDefault="false"
+            android:queryHint="@string/translate_query_hint"
+            android:focusable="false"/>
+
+    <ScrollView
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarStyle="insideOverlay">
+
+
+        <LinearLayout
+                android:id="@+id/search_result"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:id="@+id/pronunciation"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/us_pronunciation"/>
+
+                <Button
+                        android:background="@drawable/ic_menu_volume"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:id="@+id/us_btn"
+                        />
+
+                <TextView
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/uk_pronunciation"/>
+
+                <Button
+                        android:background="@drawable/ic_menu_volume"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:id="@+id/uk_btn"
+                        />
+            </LinearLayout>
+
+
+            <TextView
+                    android:text="基本释义："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/paraphrase"/>
+
+            <Button
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detail"
+                    android:text="详细释义"
+                    />
+
+            <WebView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/detail_web"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+            </WebView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

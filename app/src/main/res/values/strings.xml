@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">生活百科</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="translate_query_hint">请输入需要查询的单词</string>
+
+</resources>

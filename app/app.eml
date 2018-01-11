@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component LANGUAGE_LEVEL="JDK_1_7" jdk="Android API 25 Platform" jdk_type="Android SDK">
+	<output-test url="file://$MODULE_DIR$/build/intermediates/classes/test/debug"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$">
+		<testFolder url="file://$MODULE_DIR$/build/generated/source/r/androidTest/debug"/>
+		<testFolder url="file://$MODULE_DIR$/build/generated/source/aidl/androidTest/debug"/>
+		<testFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/androidTest/debug"/>
+		<testFolder url="file://$MODULE_DIR$/build/generated/source/rs/androidTest/debug"/>
+		<testFolder url="file://$MODULE_DIR$/build/generated/source/apt/androidTest/debug"/>
+		<testFolder url="file://$MODULE_DIR$/build/generated/res/rs/androidTest/debug"/>
+		<testFolder url="file://$MODULE_DIR$/build/generated/res/resValues/androidTest/debug"/>
+		<testFolder url="file://$MODULE_DIR$/src/testDebug/res"/>
+		<testFolder url="file://$MODULE_DIR$/src/testDebug/resources"/>
+		<testFolder url="file://$MODULE_DIR$/src/testDebug/assets"/>
+		<testFolder url="file://$MODULE_DIR$/src/testDebug/aidl"/>
+		<testFolder url="file://$MODULE_DIR$/src/testDebug/java"/>
+		<testFolder url="file://$MODULE_DIR$/src/testDebug/jni"/>
+		<testFolder url="file://$MODULE_DIR$/src/testDebug/rs"/>
+		<testFolder url="file://$MODULE_DIR$/src/testDebug/shaders"/>
+		<testFolder url="file://$MODULE_DIR$/src/androidTest/res"/>
+		<testFolder url="file://$MODULE_DIR$/src/androidTest/resources"/>
+		<testFolder url="file://$MODULE_DIR$/src/androidTest/assets"/>
+		<testFolder url="file://$MODULE_DIR$/src/androidTest/aidl"/>
+		<testFolder url="file://$MODULE_DIR$/src/androidTest/java"/>
+		<testFolder url="file://$MODULE_DIR$/src/androidTest/jni"/>
+		<testFolder url="file://$MODULE_DIR$/src/androidTest/rs"/>
+		<testFolder url="file://$MODULE_DIR$/src/androidTest/shaders"/>
+		<testFolder url="file://$MODULE_DIR$/src/test/res"/>
+		<testFolder url="file://$MODULE_DIR$/src/test/resources"/>
+		<testFolder url="file://$MODULE_DIR$/src/test/assets"/>
+		<testFolder url="file://$MODULE_DIR$/src/test/aidl"/>
+		<testFolder url="file://$MODULE_DIR$/src/test/java"/>
+		<testFolder url="file://$MODULE_DIR$/src/test/jni"/>
+		<testFolder url="file://$MODULE_DIR$/src/test/rs"/>
+		<testFolder url="file://$MODULE_DIR$/src/test/shaders"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/assets"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/blame"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/builds"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/classes"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/dependency-cache"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support.test.espresso/espresso-core/2.2.2/jars"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support.test.espresso/espresso-idling-resource/2.2.2/jars"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support.test/exposed-instrumentation-api-publish/0.5/jars"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support.test/rules/0.5/jars"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support.test/runner/0.5/jars"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/jars"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/jars"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/design/25.3.1/jars"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.1/jars"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/jars"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/jars"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/jars"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/jars"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/jars"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/jars"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/transition/25.3.1/jars"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.contrarywind/Android-PickerView/3.2.5/jars"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-classes"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-runtime-classes"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-safeguard"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-verifier"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant-run-resources"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant-run-support"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/jniLibs"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifests"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/pre-dexed"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/reload-dex"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/res"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/restart-dex"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/rs"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/shaders"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/symbols"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/intermediates/transforms"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/outputs"/>
+		<excludeFolder url="file://$MODULE_DIR$/build/tmp"/>
+	</contentEntry>
+	<lib name="runner-0.5" scope="TEST"/>
+	<lib name="espresso-idling-resource-2.2.2" scope="TEST"/>
+	<lib name="hamcrest-library-1.3" scope="TEST"/>
+	<lib name="hamcrest-integration-1.3" scope="TEST"/>
+	<lib name="jsr305-2.0.1" scope="TEST"/>
+	<lib name="espresso-core-2.2.2" scope="TEST"/>
+	<lib name="exposed-instrumentation-api-publish-0.5" scope="TEST"/>
+	<lib name="rules-0.5" scope="TEST"/>
+	<lib name="javax.annotation-api-1.2" scope="TEST"/>
+	<lib name="javax.inject-1" scope="TEST"/>
+	<lib name="javawriter-2.1.1" scope="TEST"/>
+	<lib name="hamcrest-core-1.3" scope="TEST"/>
+	<lib name="junit-4.12" scope="TEST"/>
+	<levels>
+		<level name="runner-0.5" value="project"/>
+		<level name="espresso-idling-resource-2.2.2" value="project"/>
+		<level name="hamcrest-library-1.3" value="project"/>
+		<level name="transition-25.3.1" value="project"/>
+		<level name="hamcrest-integration-1.3" value="project"/>
+		<level name="design-25.3.1" value="project"/>
+		<level name="support-core-ui-25.3.1" value="project"/>
+		<level name="jsr305-2.0.1" value="project"/>
+		<level name="support-core-utils-25.3.1" value="project"/>
+		<level name="support-fragment-25.3.1" value="project"/>
+		<level name="espresso-core-2.2.2" value="project"/>
+		<level name="exposed-instrumentation-api-publish-0.5" value="project"/>
+		<level name="rules-0.5" value="project"/>
+		<level name="javax.annotation-api-1.2" value="project"/>
+		<level name="Android-PickerView-3.2.5" value="project"/>
+		<level name="javax.inject-1" value="project"/>
+		<level name="gson-2.7" value="project"/>
+		<level name="javawriter-2.1.1" value="project"/>
+		<level name="support-v4-25.3.1" value="project"/>
+		<level name="support-media-compat-25.3.1" value="project"/>
+		<level name="hamcrest-core-1.3" value="project"/>
+		<level name="junit-4.12" value="project"/>
+		<level name="recyclerview-v7-25.3.1" value="project"/>
+		<level name="support-annotations-25.3.1" value="project"/>
+		<level name="appcompat-v7-25.3.1" value="project"/>
+		<level name="support-vector-drawable-25.3.1" value="project"/>
+		<level name="support-compat-25.3.1" value="project"/>
+		<level name="animated-vector-drawable-25.3.1" value="project"/>
+	</levels>
+</component>

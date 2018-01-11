@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_translate"
+                android:icon="@drawable/ic_menu_translate"
+                android:title="英文查询"
+                android:checked="true"/>
+        <item
+                android:id="@+id/nav_weather"
+                android:icon="@drawable/ic_menu_weather"
+                android:title="天气查询"/>
+
+        <item
+                android:id="@+id/nav_chat"
+                android:icon="@drawable/ic_menu_android"
+                android:title="我很无聊"/>
+
+        <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_menu_exit"
+                android:title="退出百科"/>
+    </group>
+
+
+</menu>
