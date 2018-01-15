@@ -78,7 +78,7 @@ public class WeatherFragment extends CustomFragment {
 
     private void showWeather() {
         WeatherTask weatherTask = new WeatherTask();
-        weatherTask.execute("http://v.juhe.cn/weather/index?key=d506993a24f67686bd1e6295a0e5a781&cityname=", address);
+        weatherTask.execute("http://v.juhe.cn/weather/index?key=你的Key&cityname=", address);
     }
 
     @Override
