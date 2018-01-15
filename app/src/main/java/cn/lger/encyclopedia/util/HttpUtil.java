@@ -3,8 +3,6 @@ package cn.lger.encyclopedia.util;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.ProtocolException;
 import java.net.URL;
 
 /**
@@ -14,6 +12,11 @@ import java.net.URL;
  */
 public class HttpUtil {
 
+    /**
+     * 获取访问网络后传回的数据
+     * @param urlString URL
+     * @return String
+     */
     public static String getJSONResult(String urlString){
         try {
             URL url = new URL(urlString);

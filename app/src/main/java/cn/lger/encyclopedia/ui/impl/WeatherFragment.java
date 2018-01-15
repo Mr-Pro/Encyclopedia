@@ -11,6 +11,7 @@ import android.widget.TextView;
 import cn.lger.encyclopedia.R;
 import cn.lger.encyclopedia.model.JsonBean;
 import cn.lger.encyclopedia.ui.CustomFragment;
+import cn.lger.encyclopedia.util.HttpUtil;
 import cn.lger.encyclopedia.util.JsonFileReader;
 import com.bigkoo.pickerview.OptionsPickerView;
 import com.google.gson.Gson;
@@ -19,6 +20,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
@@ -54,6 +56,7 @@ public class WeatherFragment extends CustomFragment {
         preferences = getActivity().getSharedPreferences("lger", 0);
         addressTextView = (TextView) rootView.findViewById(R.id.addressTextView);
         todayWeather = (TextView) rootView.findViewById(R.id.todayWeather);
+        //获取文件中的位置数据
         address = preferences.getString("address", "");
         if ("".equals(address)) {
             addressTextView.setText("点击添加城市");
@@ -90,8 +93,8 @@ public class WeatherFragment extends CustomFragment {
                 //返回的分别是三个级别的选中位置
                 address = options2Items.get(options1).get(options2);
                 addressTextView.setText(address);
-                preferences = getActivity().getSharedPreferences("lger", 0);
                 editor = preferences.edit();
+                //储存地址数据
                 editor.putString("address", address);
                 editor.commit();
                 showWeather();
@@ -171,25 +174,10 @@ public class WeatherFragment extends CustomFragment {
 
         @Override
         protected String doInBackground(String... arg0) {
-            //
+
             try {
-                URL url = new URL(arg0[0] + URLEncoder.encode(arg0[1], "UTF-8"));
-                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-                conn.setRequestMethod("GET");
-                conn.setRequestProperty("accept", "*/*");
-                conn.setRequestProperty("connection", "Keep-Alive");
-                conn.setRequestProperty("user-agent", "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36");
-
-                InputStream is = conn.getInputStream();
-                byte[] buff = new byte[1024];
-                int hasRead;
-                StringBuilder result = new StringBuilder("");
-                while ((hasRead = is.read(buff)) > 0) {
-                    result.append(new String(buff, 0, hasRead));
-                }
-                return result.toString();
-
-            } catch (Exception e) {
+                return HttpUtil.getJSONResult(arg0[0] + URLEncoder.encode(arg0[1], "UTF-8"));
+            } catch (UnsupportedEncodingException e) {
                 e.printStackTrace();
             }
             return null;
@@ -203,6 +191,10 @@ public class WeatherFragment extends CustomFragment {
             }
         }
 
+        /**
+         * 根据JSON数据解析
+         * @param result JSON
+         */
         private void parseWeatherJSON(String result){
             try {
                 JSONObject object = new JSONObject(result);

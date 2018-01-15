@@ -53,6 +53,7 @@ public class TranslateFragment extends CustomFragment {
         View rootView = inflater.inflate(R.layout.fragment_translate, container, false);
         SearchView searchView = (SearchView) rootView.findViewById(R.id.search_word);
         searchView.setOnQueryTextListener(searchViewClickListener);
+        //设置显示提交按钮
         searchView.setSubmitButtonEnabled(true);
         paraphrase = (TextView) rootView.findViewById(R.id.paraphrase);
         detail = (Button) rootView.findViewById(R.id.detail);
@@ -63,7 +64,9 @@ public class TranslateFragment extends CustomFragment {
         searchResult = (LinearLayout) rootView.findViewById(R.id.search_result);
         searchResult.setVisibility(View.INVISIBLE);
         webView = (WebView) rootView.findViewById(R.id.detail_web);
+        //设置支持JavaScript
         webView.getSettings().setJavaScriptEnabled(true);
+        //设置详细结果的WebView不可见
         webView.setVisibility(View.INVISIBLE);
         return rootView;
     }
@@ -74,13 +77,13 @@ public class TranslateFragment extends CustomFragment {
 
         @Override
         public boolean onQueryTextSubmit(String s) {
-            if (!lastSearchResult.equals(s)){
+            if (!lastSearchResult.equals(s)){//判断上一个结果和目前查询的是否相同
                 System.out.println("上个结果："+lastSearchResult);
-                SearchWordTask task = new SearchWordTask();
-                task.execute("https://api.shanbay.com/bdc/search/?word="+s);
-                searchResult.setVisibility(View.VISIBLE);
+                SearchWordTask task = new SearchWordTask();//新建查询任务
+                task.execute("https://api.shanbay.com/bdc/search/?word="+s);//访问网络的地址
+                searchResult.setVisibility(View.VISIBLE);//设置查询结果的TextView可见
             }
-            lastSearchResult = s;
+            lastSearchResult = s;//更新最后查询结果
             System.out.println("最新结果："+s);
             return true;
         }
@@ -115,6 +118,10 @@ public class TranslateFragment extends CustomFragment {
 
         }
 
+        /**
+         * 解析查询的结果
+         * @param JSON JSON数据
+         */
         private void fillResultForJSON(String JSON){
             try {
                 JSONObject object = new JSONObject(JSON);
